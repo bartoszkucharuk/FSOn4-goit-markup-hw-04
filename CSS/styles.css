@@ -43,6 +43,8 @@ img {display: block;
 }
 
 .section {
+    align-items: center;
+    margin: 0 auto;
     /* border: 1px dashed red; */
 }
 
@@ -130,13 +132,19 @@ img {display: block;
     color:var(--font-black-color);
 }
 
-.nav-list-item-link:hover,
+.nav-list-item-link :hover,
 .nav-list-item-link:focus {
     color: var(--secondary-color);
 }
 
+
+
 .header .nav-contact {
     margin-left: auto;
+}
+
+.nav-contact-list {
+    display: flex;
 }
 
 .nav-contact-link-tel,
@@ -148,11 +156,39 @@ img {display: block;
     color: var(--main-color);
 }
 
+.nav-contact-link-mail{
+    margin-left: 10px;
+}
+
+
 .nav-contact-link-tel {
     margin-right: 27px;
     margin-left: 50px;
 }
 
+.contact-mail-icon, 
+.contact-mobile-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--main-color);
+    margin-right: 10px;
+}
+.contact-mail-icon{
+    width: 16px;
+    height: 12px;
+}
+.contact-mobile-icon {
+    width: 10px;
+    height: 16px;
+}
+
+.nav-contact-list .contact-mail-icon:hover,
+.nav-contact-list .contact-mail-icon:focus,
+.nav-contact-list .contact-mobile-icon:hover,
+.nav-contact-list .contact-mobile-icon:focus {
+    fill: var(--secondary-color);
+}
 
 /* ============== INDEX.HTML ============== */
 
