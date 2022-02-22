@@ -63,6 +63,8 @@ img {display: block;
 .logo-accent:focus {
     cursor: pointer
 }
+.nav-list-item-link:hover,
+.nav-list-item-link:focus,
 .nav-contact-link-mail:hover,
 .nav-contact-link-mail:focus,
 .nav-contact-link-tel:hover,
@@ -173,7 +175,9 @@ img {display: block;
     align-items: center;
     fill: var(--main-color);
     margin-right: 10px;
+    fill: currentColor;
 }
+
 .contact-mail-icon{
     width: 16px;
     height: 12px;
@@ -181,14 +185,9 @@ img {display: block;
 .contact-mobile-icon {
     width: 10px;
     height: 16px;
+;
 }
 
-.nav-contact-list .contact-mail-icon:hover,
-.nav-contact-list .contact-mail-icon:focus,
-.nav-contact-list .contact-mobile-icon:hover,
-.nav-contact-list .contact-mobile-icon:focus {
-    fill: var(--secondary-color);
-}
 
 /* ============== INDEX.HTML ============== */
 
