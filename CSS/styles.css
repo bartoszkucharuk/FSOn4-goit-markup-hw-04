@@ -60,7 +60,8 @@ img {display: block;
 .logo-link:hover,
 .logo-link:focus, 
 .logo-accent:hover,
-.logo-accent:focus {
+.logo-accent:focus,
+.portfolio-list-item:hover {
     cursor: pointer;
 }
 .nav-list-item-link:hover,
@@ -139,8 +140,6 @@ img {display: block;
     color: var(--secondary-color);
 }
 
-
-
 .header .nav-contact {
     margin-left: auto;
 }
@@ -204,14 +203,14 @@ img {display: block;
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("/images/hero_bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    margin-left: -200px;
     width: 1600px;
     height: 600px;
     background-color: #2F303A;
     margin-bottom: 94px;
-    display: flex;
+    margin-left: -200px;
 }
 
 .banner {
@@ -410,7 +409,7 @@ img {display: block;
 
 /* ======== END our team ======== */
 /* ======== our clients ======== */
-.our-clients .section {
+.our-clients .container {
     display: flex;
 }
 
@@ -529,8 +528,8 @@ img {display: block;
     margin-bottom: 30px;
 }
 
-.portfolio-list-item:hover {
-    cursor: pointer;
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -615,7 +614,6 @@ img {display: block;
     margin: 0;
 }
 
-
 .footer-social-links-list-item {
     display: inline-flex;
     justify-content: center;
@@ -631,19 +629,13 @@ img {display: block;
 .footer-social-links-list-item:hover, 
 .footer-social-links-list-item:focus {
     background-color: var(--secondary-color);
-    fill: white;
 }
 
 .footer-social-links-list-item:not(:last-child){
     margin-right: 10px;
-    
 }
 
 .footer-social-links-icon {
     max-width: 20px;
     max-height: 20px;
-    color: #AFB1B8;
-}
-
-
 }
