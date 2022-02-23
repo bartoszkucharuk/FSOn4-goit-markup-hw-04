@@ -201,15 +201,14 @@ img {display: block;
 }
 
 .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("/images/hero_bg.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../images/hero_bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    width: 1600px;
-    height: 600px;
     background-color: #2F303A;
     margin-bottom: 94px;
+    width: 1600px;
     margin-left: -200px;
 }
 
@@ -222,6 +221,8 @@ img {display: block;
     display: block;
     justify-content: center;
     align-items: center;
+    padding-top: 200px;
+    padding-bottom: 400px;
 }
 
 .header-hero{
