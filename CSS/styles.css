@@ -45,7 +45,7 @@ img {display: block;
 .section {
     align-items: center;
     margin: 0 auto;
-    border: 1px dashed red;
+    /* border: 1px dashed red; */
 }
 
 .container {
