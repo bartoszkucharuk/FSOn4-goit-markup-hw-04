@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-05</title>
 
     <!-- modern-normalize link -->
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/modern-normalize/1.1.0/modern-normalize.css">
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header section">
         <div class="container">
             <!-- LOGO -->
             <div class="logo"><a class="logo-link link" href="/index.html">Web<span class="logo-accent">Studio</span></a>
@@ -57,18 +57,16 @@
     </header>
 
 
-
-    <main>
-        <div class="container">
-            <div class="hero section">
-                <div class="banner">
+    <main class="section">
+        <div class="hero">
+                <div class="banner container">
                     <h1 class="header-hero">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
                     <button type="button" class="button-hero link">Zamów usługę</button>
                 </div>
             </div>
         </div>
 
-        <section class="about">
+        <section class="about section">
             <div class="container">
                 <ul class="about-content list">
                     <li class="about-content-item">
@@ -133,13 +131,14 @@
             </div>
         </section>
 
-        <section class="what-we-do">
+        <section class="what-we-do section">
             <div class="container">
                 <h2 class="header-what-we-do">Czym się zajmujemy</h2>
                 <ul class="ul-what-we-do list">
                     <li class="li-what-we-do"><img class="img-what-we-do" src="images/img_what_we_do_1.jpg"
                             alt="writing codes on white keyboard" width="370" height="294"></li>
-                    <li class="li-what-we-do"><img class="img_what_we_do" src="images/img_what_we_do_2.jpg"
+                            
+                    <li class="li-what-we-do"><img class="img-what-we-do" src="images/img_what_we_do_2.jpg"
                             alt="informations comparition" width="370" height="294"></li>
                     <li class="li-what-we-do"><img class="img-what-we-do" src="images/img_what_we_do_3.jpg"
                             alt="matching colors on tablet" width="370" height="294"></li>
@@ -148,7 +147,7 @@
         </section>
 
 
-        <section class="our-team">
+        <section class="our-team section">
             <div class="container">
                 <h2 class="header-our-team">Nasz zespół</h2>
                 <ul class="ul-our-team list">
@@ -295,8 +294,10 @@
             </div>
         </section>
 
-        <section class="our-clients container">
+        <section class="our-clients section">
             <h2 class="header-our-clients">Nasi klienci</h2>
+
+            <div class="our-clients-logos container">
                 <ul class="our-clients-list list">
                     <a class="our-clients-list-link link" href="#">
                         <li class="our-clients-list-link-item"><svg class="our-clients-links-icon">
@@ -340,15 +341,17 @@
                         </li>
                     </a>
                 </ul>
+            </div>
         </section>
     </main>
 
     <!-- ======== FOOTER ======== -->
 
-    <footer class="section-footer">
-        <div class="footer-content"><a class="footer-logo-link link" href="/index.html">Web<span
-                    class="footer-logo-accent">Studio</span></a>
-    
+<footer class="section-footer section">
+    <div class="footer-content container">
+        <div class="footer-adress-wrapper">
+            <a class="footer-logo-link link" href="/index.html">Web<span class="footer-logo-accent">Studio</span></a>
+
             <address class="footer-address">
                 m. Warszawa, Aleje Jerozolimskie 21</address>
             <p class="contact.footer.mail"><a class="mailto-footer-mail link"
@@ -356,8 +359,9 @@
             <p class="contact.footer.tel"><a class="callto-footer-tel link" href="callto:+48111111111">+48 111 111
                     111</a></p>
         </div>
-    
-        <div class="footer-social-links link">
+
+
+        <div class="footer-social-links-wrapper link">
             <p class="footer-social-title">dołącz do nas</p>
             <ul class="footer-social-links-list list">
                 <a class="footer-social-links-link link" href="#">
@@ -366,21 +370,21 @@
                         </svg>
                     </li>
                 </a>
-    
+
                 <a class="footer-social-links-link link" href="#">
                     <li class="footer-social-links-list-item"><svg class="footer-social-links-icon">
                             <use href="./images/sprite.svg#icon-twitter"></use>
                         </svg>
                     </li>
                 </a>
-    
+
                 <a class="footer-social-links-link link" href="#">
                     <li class="footer-social-links-list-item"><svg class="footer-social-links-icon">
                             <use href="./images/sprite.svg#icon-facebook"></use>
                         </svg>
                     </li>
                 </a>
-    
+
                 <a class="footer-social-links-link link" href="#">
                     <li class="footer-social-links-list-item"><svg class="footer-social-links-icon">
                             <use href="./images/sprite.svg#icon-linkedin"></use>
@@ -389,7 +393,8 @@
                 </a>
             </ul>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
 
 </html>
