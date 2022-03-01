@@ -145,6 +145,11 @@ img {display: block;
     width: 100%;
 }
 
+.nav-list-item.active::after {
+  color: red;
+  background: red;
+  width: 100%;
+}
 
 .nav-list-item-link {
     color:var(--font-black-color);
