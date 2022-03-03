@@ -130,26 +130,6 @@ img {display: block;
     margin-right: 46px;
 }
 
-.nav-list-item::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 4px;
-    bottom: -33px;
-    left: 0;
-    background: var(--secondary-color);
-    border-radius: 2px;
-}
-
-.nav-list-item:hover::after {
-    width: 100%;
-}
-
-.nav-list-item.active::after {
-  color: red;
-  background: red;
-  width: 100%;
-}
 
 .nav-list-item-link {
     color:var(--font-black-color);
@@ -158,6 +138,7 @@ img {display: block;
 .nav-list-item-link:hover,
 .nav-list-item-link:focus {
     color: var(--secondary-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .nav-contact {
@@ -474,18 +455,20 @@ img {display: block;
     border-radius: 4px;
 }
 
-.our-clients-list-link:not(:last-child) {
+.our-clients-list-link-item:not(:last-child) {
 margin-right: 30px;
 }
 
-.our-clients-list-link-item:hover ,
+.our-clients-list-link-item:hover,
 .our-clients-list-link-item:focus {
     border-color: var(--secondary-color);
     fill: var(--secondary-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-list-link-item:hover .our-clients-links-icon {
     fill: var(--secondary-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ======== END our clients ======== */
